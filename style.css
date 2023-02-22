@@ -1,13 +1,31 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
 .nav {
     display: grid;
     grid-template: 1fr 5fr / 1fr 4fr;
     height: 100vh;
 }
 
+img {
+    display: inline;
+    width: 2em;
+    height: 2em;
+    stroke: white;
+}
+
 .dashboard {
     background-color: blue;
     grid-column: 1 / 2;
     grid-row: 1 / -1 ;
+}
+
+.dashboard > * {
+    margin: 20px;
+    margin-bottom: 50px;
+    color: white;
 }
 
 .header {
@@ -20,4 +38,10 @@
     background-color: white;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
