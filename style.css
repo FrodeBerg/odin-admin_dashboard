@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
+    overflow: hidden;
 }
 
 .nav {
@@ -16,6 +17,14 @@ img {
     stroke: white;
 }
 
+p {
+    margin: 0;
+}
+
+hr {
+    border: grey solid 1px;
+}
+
 .dashboard {
     background-color: blue;
     grid-column: 1 / 2;
@@ -29,7 +38,7 @@ img {
 }
 
 .header {
-    background-color: grey;
+    background-color: white;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
@@ -60,16 +69,49 @@ img {
 }
 
 .projects {
-    background-color: white;
+    padding-top: 25px;
+    background-color: grey;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
     display: grid;
     grid-template: 50px 1fr 50px 1fr / 5fr 2fr;
+    overflow-y: auto;
 }
 
 .your_projects {
     grid-column: 1 / -2;
     grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.your_projects > div {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.announcements {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.trending {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sub_heading {
+    font-weight: 800;
+    font-size: 22px;
 }
 
 .heading {
