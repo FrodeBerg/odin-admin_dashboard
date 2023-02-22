@@ -44,4 +44,9 @@ img {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 18px;
+}
+
+.heading {
+    font-size: 32px;
 }
