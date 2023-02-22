@@ -32,12 +32,19 @@ img {
     background-color: grey;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
 }
 
-.projects {
-    background-color: white;
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
+.header > div {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.space {
+    justify-content: space-around;
 }
 
 .icon {
@@ -45,6 +52,17 @@ img {
     align-items: center;
     gap: 5px;
     font-size: 18px;
+}
+
+.end {
+    justify-content: end;
+    gap: 10px;
+}
+
+.projects {
+    background-color: white;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
 }
 
 .heading {
